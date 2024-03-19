@@ -1,0 +1,18 @@
+/**
+ * Charlize Aponte
+ * Date: 3/19/24
+ * Assignment: Chapter 11 Demo
+ */
+
+
+package edu.quinnipiac.ser210.guessinggame
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
