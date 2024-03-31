@@ -15,7 +15,6 @@ class ResultFragment : Fragment() {
     lateinit var viewModel: ResultViewModel
     lateinit var viewModelFactory: ResultViewModelFactory
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -26,7 +25,7 @@ class ResultFragment : Fragment() {
         viewModelFactory = ResultViewModelFactory(result)
         viewModel = ViewModelProvider(this, viewModelFactory)
             .get(ResultViewModel::class.java)
-        binding.wonLost.text = viewModel.result
+        binding.resultViewModel = viewModel
 
         binding.newGameButton.setOnClickListener {
             view.findNavController()
